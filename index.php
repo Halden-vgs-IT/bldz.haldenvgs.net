@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>BLDZ Main Page</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>Heisann verden!</h1>
