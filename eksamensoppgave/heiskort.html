@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Heiskort</title>
+    <link href="eksamen_style.css" rel="stylesheet">
+    <script src="javascript/script_heiskort.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="heiskort.html">Heiskort</a>
+        <a href="hytter.html">Hytteinfo</a>
+        <a href="hytteutleie.html">Hytteutleie</a>
+    </nav>
+    <main>
+
+        <h1>Prisberegner for heiskort</h1>
+        <p>Her kan du regne ut prisen på et heiskort, for opp til en uke. Man teller som barn hvis man er 12 år eller under.</p>
+
+        <!--
+        Her skal man velge om man er barn eller voksen, og så velger man antall dager man skal ha kort til.
+        Jeg brukte først en <input type="number"> hvor jeg satte en min og max verdi,
+        men det var fortsatt mulig å overstige det med å skrive inn et høyrer tall. Derfor valgte jeg heller å bruke en <select>.
+        -->
+        <div>
+            <select id="lstAge">
+                <option value="200">Voksen</option>
+                <option value="100">Barn</option>
+            </select>
+            <p>Antall dager:</p>
+            <select id="days">
+                <option value="1">1 dag</option>
+                <option value="2">2 dager</option>
+                <option value="3">3 dager</option>
+                <option value="4">4 dager</option>
+                <option value="5">5 dager</option>
+                <option value="6">6 dager</option>
+                <option value="7">7 dager</option>
+            </select>
+            <button id="buttonReady">Beregn pris</button>
+        </div>
+
+        <!--Her vises prisen og hvor mye penger man sparte, hvis man sparte noen penger.-->
+        <p id="results"></p>
+        <p id="moneySaved"></p>
+    </main>
+</body>
+</html>

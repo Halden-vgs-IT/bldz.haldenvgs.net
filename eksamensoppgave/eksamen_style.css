@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+p {
+    font-family: sans-serif;
+}
+h1 {
+    font-family: sans-serif;
+}
+/*Denne klassen fjerner scrollebaren, men fjerner ikke den funksjonalitet.*/
+.example::-webkit-scrollbar {
+    display: none;
+}
+/* Classes*/
+.hjem {
+    margin: 20px;
+    padding: 10px;
+    background-color: cadetblue;
+}
+.center {
+    margin:auto;
+}
+.containerdiv {
+    border: 0;
+
+    alignment: center;
+}
+.menyBilde {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/*Disse "knappene" er usynlige og ligger over lokaskjonen på de to hyttene på menybildet.*/
+.buttonGranbo {
+    height: 13%;
+    width: 10%;
+    left: 40%;
+    top: 21%;
+    position: absolute;
+}
+
+.buttonGranstua {
+    height: 14%;
+    width: 11%;
+    left: 50%;
+    top: 30%;
+    position: absolute;
+}
+
+.mySlides1 {display:none;}
+.mySlides2 {display:none;}
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 2em;
+}
+
+/*Disse "containerene for de ulike hyttene er gjort slik at de er midtstilte på siden, og er hjemt når man først laster inn siden.*/
+.containerGranstua {
+    margin:auto;
+    display: none;
+}
+
+.containerGranbo {
+    margin:auto;
+    display: none;
+}
+
+.containerGrantoppen {
+    margin:auto;
+    display: none;
+}
+
+.containerGranhaug {
+    margin:auto;
+    display: none;
+}
+
+.leieButton {
+    margin-bottom: 30px;
+    background-color: cadetblue;
+    border: 1px;
+}
+
+.hytteBilder {
+    height: 200px;
+}

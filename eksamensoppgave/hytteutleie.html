@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Hytteutleie</title>
+    <link rel="stylesheet" href="eksamen_style.css">
+    <script src="javascript/script_hytteutleie.js"></script>
+</head>
+<body class="example">
+<nav>
+    <a href="index.html">Hjem</a>
+    <a href="heiskort.html">Heiskort</a>
+    <a href="hytter.html">Hytteinfo</a>
+    <a href="hytteutleie.html">Hytteutleie</a>
+</nav>
+    <h2>Velg sesong</h2>
+
+<!--Her velger man hvilken sesong man skal leie hytter for. Den vil da vise de tilgjengelige hyttene for den sesongen man har valgt.
+    De hyttene som ikke er tilgjengelige her er hjemt. Når man trykker på kanppen for å leie hytten,så vil den da stå at den er utleid.-->
+
+    <select id="sesong" class="center">
+        <option>----</option>
+        <option value="jul">Juleferie</option>
+        <option value="vinter">Vinterferie</option>
+        <option value="paske">Påskeferie</option>
+    </select>
+
+    <div class="flexcol">
+
+        <div class="containerGranstua" id="granstua">
+            <img src="media/granstua.jpg" id="stuabilde" class="hytteBilder">
+            <h3>Granstua</h3>
+            <ul>
+                <li>Sengeplasser: 4</li>
+                <li>Standard: Høy</li>
+                <li>Har badstue</li>
+                <li>Ukepris: 12 000kr</li>
+            </ul>
+            <button id="leiGranstua" class="leieButton">Trykk her for å leie</button>
+            <hr>
+        </div>
+
+        <div class="containerGranbo" id="granbo">
+            <img src="media/granbo.jpg" id="bobilde" class="hytteBilder">
+            <h3>Granbo</h3>
+            <ul>
+                <li>Sengeplasser: 6</li>
+                <li>Standard: Middels</li>
+                <li>Ukepris: 15 000kr</li>
+            </ul>
+            <button id="leiGranboJ" class="leieButton">Trykk her for å leie</button>
+            <button id="leiGranboV" class="leieButton">Trykk her for å leie</button>
+            <hr>
+        </div>
+
+        <div class="containerGrantoppen" id="grantoppen">
+            <img src="media/grantoppen.jpg" id="toppenbilde" class="hytteBilder">
+            <h3>Grantoppen</h3>
+            <ul>
+                <li>Sengeplasser: 8</li>
+                <li>Standard: Lav</li>
+                <li>Ukepris: 16 000kr</li>
+            </ul>
+            <button id="leiGrantoppen" class="leieButton">Trykk her for å leie</button>
+            <hr>
+        </div>
+
+        <div class="containerGranhaug" id="granhaug">
+            <img src="media/granhaug.jpg" id="haugbilde" class="hytteBilder">
+            <h3>Granhaug</h3>
+            <ul>
+                <li>Sengeplasser: 10</li>
+                <li>Standard: Høy</li>
+                <li>Har badstue</li>
+                <li>Ukepris: 30 000kr</li>
+            </ul>
+            <button id="leiGranhaug" class="leieButton">Trykk her for å leie</button>
+            <hr>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Hytteutleie</title>
+    <link href="eksamen_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="javascript/script_hytte.js"></script>
+
+</head>
+<body class="example">
+<nav>
+    <a href="index.html">Hjem</a>
+    <a href="heiskort.html">Heiskort</a>
+    <a href="hytter.html">Hytteinfo</a>
+    <a href="hytteutleie.html">Hytteutleie</a>
+</nav>
+
+    <div class="containerdiv">
+        <img src="media/menybilde.jpg" class="menyBilde">
+        <a onclick="granboFunction(), plusDivs(-1, 0)" class="buttonGranbo"></a>
+        <a onclick="granstuaFunction(), plusDivs(-1, 1)" class="buttonGranstua"></a>
+    </div>
+
+    <p>Trykke på hvilken hytte du vil vite mer om. (For øyblikker så fungerer bare Granbo, og Granstua.) Etter man har trykket på hytten så skal det dukke opp informasjon på bunnen av siden.</p>
+
+    <video width="320" height="180" controls >
+        <source src="media/hyttefelt.mp4" type="video/mp4">
+    </video>
+
+<!--Begge divene under er hjemt vekk ifra siden frem til man trykker på enten Granbo, eller Granstua hyttene på menybildet.
+    Begge divene inneholder hver sin bildeslider som er man kan se igjennom bildene til hver av hyttene.
+    Jeg hadde egentlig lyst til at denne skulle "poppe" opp over kartet, men dette fikk jeg ikek til å fungere,
+    men hvis vi får tid til "jobbe videre" med denne oppgaven så er dette en av tingene jeg vil få til-->
+
+    <div id="granboInfo" style="display: none">
+        <h1>Granbo</h1>
+        <p>Granbo har seks soveplasser og har en middels standard. Den har ikke en badstue.</p>
+
+        <div class="w3-content w3-display-container">
+            <img class="mySlides1" src="media/granbo01.jpg" style="width:100%">
+            <img class="mySlides1" src="media/granbo02.jpg" style="width:100%">
+            <img class="mySlides1" src="media/granbo03.jpg" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+        </div>
+    </div>
+
+    <div id="granstuaInfo" style="display: none">
+        <h1>Granstua</h1>
+        <p>Granstua har fire soveplasser og har en høy standard. Den har en badstue.</p>
+
+        <div class="w3-content w3-display-container">
+            <img class="mySlides2" src="media/granstua01.jpg" style="width:100%">
+            <img class="mySlides2" src="media/granstua02.jpg" style="width:100%">
+            <img class="mySlides2" src="media/granstua03.jpg" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+        </div>
+    </div>
+</body>
+</html>
